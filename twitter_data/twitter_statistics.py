@@ -6,3 +6,4 @@ api = twitter.Api(consumer_key='TjtC3Moxczg62gsMYNzrxGtQ3',
                   access_token_secret='hyTdLdsIGHaOMnPVQIaHEr3KCeThW4hlPK3BXTUkKthd6')
 
 print(api.VerifyCredentials())
+print(api.GetFriends())
