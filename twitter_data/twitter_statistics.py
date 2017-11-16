@@ -42,7 +42,6 @@ stopwords = set(STOPWORDS)
 stopwords.add("https")
 
 wordCloud = WordCloud(max_words=1000, mask=mask, margin=10, stopwords=stopwords, random_state=1).generate(text)
-# store default colored image
 default_colors = wordCloud.to_array()
 plt.title("Custom colors")
 plt.imshow(wordCloud.recolor(color_func=grey_color_func, random_state=3),
